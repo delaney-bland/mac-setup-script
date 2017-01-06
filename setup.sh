@@ -39,28 +39,27 @@ brews=(
 
 casks=(
   adobe-reader
-  airdroid
-  atom
+  amazon-drive
+  bartender
   betterzipql
+  beyond-compare
   cakebrew
   cleanmymac
-  commander-one
-  datagrip
   docker
   dropbox
+  expandrive
+  fantastical
+  filezilla
   firefox
-  geekbench
+  gemini
   google-chrome
-  google-drive
   github-desktop
   hosts
   handbrake
   intellij-idea
-  istat-menus
-  istat-server  
+  kindle
+  lastpass
   launchrocket
-  licecap
-  lumen
   iterm2
   qlcolorcode
   qlmarkdown
@@ -68,23 +67,18 @@ casks=(
   quicklook-json
   quicklook-csv
   microsoft-office
+  monity-helper
   plex-home-theater
   plex-media-server
   private-eye
-  satellite-eyes
-  sidekick
   skype
   slack
+  snagit
   spotify
-  steam
-  teleport
-  transmission
-  transmission-remote-gui
-  tunnelbear
+  squirrelsql
+  sublime-text
+  teamviewer
   vlc
-  volumemixer
-  webstorm
-  xquartz
 )
 
 pips=(
