@@ -40,6 +40,7 @@ brews=(
 casks=(
   adobe-reader
   amazon-drive
+  atom
   bartender
   betterzipql
   beyond-compare
@@ -88,16 +89,9 @@ pips=(
   pythonpy
 )
 
-gems=(
-  bundle
-)
-
 npms=(
-  fenix-cli
   gitjk
   kill-tabs
-  n
-  nuclide-installer
 )
 
 clibs=(
@@ -128,9 +122,7 @@ git_configs=(
 apms=(
   atom-beautify
   circle-ci
-  ensime
   intellij-idea-keymap
-  language-scala
   minimap
 )
 
@@ -211,7 +203,6 @@ install 'brew cask install' ${casks[@]}
 echo "Installing secondary packages ..."
 # TODO: add info part of install or do reinstall?
 install 'pip install --upgrade' ${pips[@]}
-install 'gem install' ${gems[@]}
 install 'clib install' ${clibs[@]}
 install 'bpkg install' ${bpkgs[@]}
 install 'npm install --global' ${npms[@]}
