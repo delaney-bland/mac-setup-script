@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
 brews=(
-  android-platform-tools
   archey
   aws-shell
   cheat
-  clib
   coreutils
   dfc
   findutils
@@ -16,33 +14,23 @@ brews=(
   git-extras
   git-lfs
   gnuplot --with-qt
-  go
-  gpg
+  gnupg
   hh
   htop
   httpie
-  iftop
   imagemagick
-  lighttpd
   lnav
-  lumen
   mackup
   macvim
+  maven
   mas
-  micro
   mtr
-  ncdu
   nmap
   node --with-full-icu
   poppler
-  postgresql
-  pgcli
   python
   python3
-  scala
-  sbt
   stormssh
-  thefuck
   tmux
   tree
   trash
