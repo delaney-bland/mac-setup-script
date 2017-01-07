@@ -75,6 +75,7 @@ casks=(
   skype
   slack
   snagit
+  spamsieve
   spotify
   squirrelsql
   sublime-text
