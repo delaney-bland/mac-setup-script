@@ -102,7 +102,6 @@ clibs=(
 bkpgs=(
 )
 
-gpg_key='3E219504'
 git_configs=(
   "branch.autoSetupRebase always"
   "color.ui auto"
@@ -115,9 +114,8 @@ git_configs=(
   "rebase.autostash true"
   "rerere.autoUpdate true"
   "rerere.enabled true"
-  "user.name pathikrit"
-  "user.email pathikritbhowmick@msn.com"
-  "user.signingkey ${gpg_key}"
+  "user.name SouthernKnight"
+  "user.email github@blandfamily.com"
 )
 
 apms=(
@@ -131,11 +129,10 @@ fonts=(
   font-source-code-pro
 )
 
-omfs=(
-  jacaetevha
-  osx
-  thefuck
-)
+#omfs=(
+#  jacaetevha
+#  osx
+#)
 
 ######################################## End of app list ########################################
 set +e
@@ -224,7 +221,6 @@ for config in "${git_configs[@]}"
 do
   git config --global ${config}
 done
-gpg --keyserver hkp://pgp.mit.edu --recv ${gpg_key}
 
 echo "Installing mac CLI ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
