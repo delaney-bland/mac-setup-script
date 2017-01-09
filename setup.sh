@@ -44,8 +44,10 @@ casks=(
   bartender
   betterzipql
   beyond-compare
+  burn
   cakebrew
   cleanmymac
+  disk-inventory-x
   docker
   dropbox
   evernote
