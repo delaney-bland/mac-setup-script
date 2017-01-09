@@ -44,8 +44,11 @@ casks=(
   bartender
   betterzipql
   beyond-compare
+  box-edit
+  box-sync
   cakebrew
   cleanmymac
+  diffmerge
   docker
   dropbox
   evernote
@@ -70,18 +73,21 @@ casks=(
   quicklook-csv
   microsoft-office
   monity-helper
+  parallels-desktop
   plex-home-theater
   plex-media-server
+  postman
   private-eye
-  skype
+  screenhero
+  skype-for-business
   slack
   snagit
-  spamsieve
   spotify
   squirrelsql
   sublime-text
   teamviewer
   vlc
+  vnc-viewer
 )
 
 pips=(
