@@ -31,6 +31,7 @@ brews=(
   python
   python3
   stormssh
+  subversion
   tmux
   tree
   trash
@@ -184,13 +185,6 @@ function install {
     fi
   done
 }
-
-echo "Installing ruby ..."
-brew install ruby-install chruby
-ruby-install ruby
-# TODO: enable auto switch here by following instructions
-echo "ruby-2.3.1" > ~/.ruby-version
-ruby -v
 
 echo "Installing Java ..."
 brew cask install java
