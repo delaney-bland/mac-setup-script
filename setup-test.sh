@@ -1,147 +1,15 @@
 #!/usr/bin/env bash
 
 brews=(
-  archey
-  aws-shell
-  cheat
   coreutils
-  dfc
-  findutils
-  fontconfig --universal
-  fpp
-  fzf
-  git
-  git-extras
-  git-lfs
-  gnuplot --with-qt
-  gnupg
-  hh
   htop
-  httpie
-  imagemagick
-  lnav
-  mackup
-  macvim
-  maven
-  mas
-  mtr
-  nmap
-  node --with-full-icu
-  poppler
-  python
-  python3
-  stormssh
-  tmux
-  tree
-  trash
   wget
 )
 
 casks=(
   adobe-reader
-  amazon-drive
-  atom
-  bartender
-  betterzipql
-  beyond-compare
-  box-edit
-  box-sync
-  burn
   cakebrew
-  cleanmymac
-  diffmerge
-  disk-inventory-x
-  docker
-  dropbox
-  evernote
-  expandrive
-  fantastical
-  filezilla
-  firefox
-  gemini
-  google-chrome
-  github-desktop
-  hosts
-  handbrake
-  intellij-idea
-  kindle
-  lastpass
-  launchrocket
-  iterm2
-  qlcolorcode
-  qlmarkdown
-  qlstephen
-  quicklook-json
-  quicklook-csv
-  microsoft-office
-  monity-helper
-  parallels-desktop
-  plex-home-theater
-  plex-media-server
-  postman
-  private-eye
-  screenhero
-  skype-for-business
-  slack
-  snagit
-  spotify
-  squirrelsql
-  sublime-text
-  teamviewer
-  vlc
-  vnc-viewer
 )
-
-pips=(
-  pip
-  glances
-  ohmu
-  pythonpy
-)
-
-npms=(
-  gitjk
-  kill-tabs
-)
-
-clibs=(
-  bpkg/bpkg
-)
-
-bkpgs=(
-)
-
-git_configs=(
-  "branch.autoSetupRebase always"
-  "color.ui auto"
-  "core.autocrlf input"
-  "core.pager cat"
-  "credential.helper osxkeychain"
-  "merge.ff false"
-  "pull.rebase true"
-  "push.default simple"
-  "rebase.autostash true"
-  "rerere.autoUpdate true"
-  "rerere.enabled true"
-  "user.name SouthernKnight"
-  "user.email github@blandfamily.com"
-)
-
-apms=(
-  atom-beautify
-  circle-ci
-  intellij-idea-keymap
-  minimap
-)
-
-fonts=(
-  font-source-code-pro
-)
-
-#omfs=(
-#  jacaetevha
-#  osx
-#)
 
 ######################################## End of app list ########################################
 set +e
@@ -207,15 +75,6 @@ echo "Installing software ..."
 brew cask info ${casks[@]}
 install 'brew cask install' ${casks[@]}
 
-echo "Installing secondary packages ..."
-# TODO: add info part of install or do reinstall?
-install 'pip install --upgrade' ${pips[@]}
-install 'clib install' ${clibs[@]}
-install 'bpkg install' ${bpkgs[@]}
-install 'npm install --global' ${npms[@]}
-install 'apm install' ${apms[@]}
-install 'brew cask install' ${fonts[@]}
-
 echo "Upgrading bash ..."
 brew install bash
 sudo bash -c "echo $(brew --prefix)/bin/bash >> /private/etc/shells"
@@ -224,12 +83,6 @@ mv ~/.bashrc ~/.bashrc_backup
 mv ~/.gitconfig ~/.gitconfig_backup
 cd; curl -#L https://github.com/SouthernKnight/bashstrap/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,screenshot.png}
 source ~/.bash_profile
-
-echo "Setting git defaults ..."
-for config in "${git_configs[@]}"
-do
-  git config --global ${config}
-done
 
 echo "Installing mac CLI ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
