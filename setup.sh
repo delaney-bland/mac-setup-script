@@ -46,9 +46,11 @@ casks=(
   beyond-compare
   box-edit
   box-sync
+  burn
   cakebrew
   cleanmymac
   diffmerge
+  disk-inventory-x
   docker
   dropbox
   evernote
