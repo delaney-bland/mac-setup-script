@@ -48,6 +48,7 @@ casks=(
   cleanmymac
   docker
   dropbox
+  evernote
   expandrive
   fantastical
   filezilla
