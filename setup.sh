@@ -78,7 +78,6 @@ casks=(
   private-eye
   skype
   slack
-  snagit
   spamsieve
   spotify
   squirrelsql
