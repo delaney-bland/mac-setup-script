@@ -72,7 +72,7 @@ casks=(
   quicklook-csv
   microsoft-office
   monity-helper
-  plex-home-theater
+  plex-media-player
   plex-media-server
   private-eye
   skype
