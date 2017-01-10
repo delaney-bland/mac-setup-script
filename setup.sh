@@ -16,6 +16,7 @@ brews=(
   git-lfs
   gnuplot --with-qt
   gnupg
+  go
   hh
   htop
   httpie
