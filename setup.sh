@@ -4,6 +4,7 @@ brews=(
   archey
   aws-shell
   cheat
+  clib
   coreutils
   dfc
   findutils
