@@ -7,6 +7,7 @@ brews=(
   clib
   coreutils
   dfc
+  doxygen
   findutils
   fontconfig --universal
   fpp
