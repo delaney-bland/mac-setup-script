@@ -59,6 +59,7 @@ casks=(
   filezilla
   firefox
   gemini
+  gimp
   google-chrome
   github-desktop
   hosts
