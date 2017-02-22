@@ -22,6 +22,7 @@ brews=(
   htop
   httpie
   imagemagick
+  libdvdcss
   lnav
   mackup
   macvim
