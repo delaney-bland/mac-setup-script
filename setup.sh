@@ -66,20 +66,21 @@ casks=(
   hosts
   handbrake
   intellij-idea
+  iterm2
   kindle
   lastpass
   launchrocket
-  iterm2
-  qlcolorcode
-  qlmarkdown
-  qlstephen
-  quicklook-json
-  quicklook-csv
+  malwarebytes-anti-malware
   microsoft-office
   monity-helper
   plex-media-player
   plex-media-server
   private-eye
+  qlcolorcode
+  qlmarkdown
+  qlstephen
+  quicklook-json
+  quicklook-csv
   skype
   slack
   spamsieve
