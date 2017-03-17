@@ -89,6 +89,7 @@ casks=(
   squirrelsql
   sublime-text
   teamviewer
+  vagrant
   vlc
   vnc-viewer
 )
@@ -102,7 +103,10 @@ pips=(
 
 npms=(
   gitjk
+  jasmine
+  karma
   kill-tabs
+  protractor
 )
 
 clibs=(
