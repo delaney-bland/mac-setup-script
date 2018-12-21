@@ -2,38 +2,27 @@
 
 brews=(
   archey
-  aws-shell
   cheat
   clib
   coreutils
   dfc
-  doxygen
   findutils
-  fontconfig --universal
+  fontconfig
   fpp
   fzf
-  git
-  git-extras
-  git-lfs
   gnuplot --with-qt
   gnupg
-  go
   hh
   htop
   httpie
   imagemagick
   libdvdcss
   lnav
-  mackup
   macvim
-  maven
   mas
   mtr
-  nmap
-  node --with-full-icu
   poppler
   python
-  python3
   stormssh
   tmux
   tree
@@ -43,64 +32,30 @@ brews=(
 
 casks=(
   adobe-acrobat-reader
-  amazon-drive
-  atom
-  bartender
-  betterzipql
-  beyond-compare
   burn
   cakebrew
-  cleanmymac
-  disk-inventory-x
-  docker
-  dropbox
-  evernote
-  expandrive
-  fantastical
   filezilla
   firefox
-  gemini
   gimp
   google-chrome
-  github-desktop
-  hosts
-  handbrake
-  intellij-idea
   iterm2
   kindle
   lastpass
-  launchrocket
-  malwarebytes-anti-malware
-  microsoft-office
-  monity-helper
-  plex-media-player
-  plex-media-server
-  private-eye
   qlcolorcode
   qlmarkdown
   qlstephen
   quicklook-json
   quicklook-csv
-  skype
-  slack
   spamsieve
   spotify
-  squirrelsql
   sublime-text
-  teamviewer
   vlc
 )
 
 pips=(
-  pip
-  glances
-  ohmu
-  pythonpy
 )
 
 npms=(
-  gitjk
-  kill-tabs
 )
 
 clibs=(
@@ -221,7 +176,7 @@ sudo bash -c "echo $(brew --prefix)/bin/bash >> /private/etc/shells"
 mv ~/.bash_profile ~/.bash_profile_backup
 mv ~/.bashrc ~/.bashrc_backup
 mv ~/.gitconfig ~/.gitconfig_backup
-cd; curl -#L https://github.com/SouthernKnight/bashstrap/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,screenshot.png}
+cd; curl -#L https://github.com/delaney-bland/bashstrap/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,screenshot.png}
 source ~/.bash_profile
 
 echo "Setting git defaults ..."
@@ -249,7 +204,7 @@ do
   echo "Failed to install: $fail"
 done
 
-echo "Run `mackup restore` after DropBox has done syncing"
+#echo "Run `mackup restore` after DropBox has done syncing"
 
 #echo "Setting up fish shell ..."
 #brew install fish chruby-fish
